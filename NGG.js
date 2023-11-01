@@ -9,28 +9,35 @@ function startGame() {
     document.getElementById('attempts').textContent = 'Attempts: ' + attempts;
 }
 startGame();
+    // start the actual game (function does not enable it)
 function checkGuess() {
     var userGuess = parseInt(document.getElementById('userGuess').value);
     var messageElement = document.getElementById('message');
     var attemptsElement = document.getElementById('attempts');
+    // check the guess
 
     attempts++;
+    // increase the number of attempts
 
     if (userGuess < 1 || userGuess > 25) {
         messageElement.textContent = 'Please enter a valid number between 1 and 25.';
+        // makes sure the user stays within the valid values
     } else if (userGuess < randomNumber) {
         messageElement.textContent = 'Too low! Try again.';
+        // message if the guess is too low
     } else if (userGuess > randomNumber) {
         messageElement.textContent = 'Too high! Try again.';
+        // message if the guess is too high
     } else {
         messageElement.textContent = 'Congratulations! You guessed the correct number!';
     }
+        // message if you guess correctly
 
     attemptsElement.textContent = 'Attempts: ' + attempts;
 }
+// display the number of attempts
 
 
-
-// Add an event listener for the button click and start the game when the page loads
+// Added a event listener for the button click and start the game when the page loads
 document.getElementById("submitButton").addEventListener("click", checkGuess);
 window.onload = startGame;
