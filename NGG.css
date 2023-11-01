@@ -1,0 +1,31 @@
+.div-one{
+    background-color: rgb(231, 222, 240);
+    width: 750px;
+    height: 500px;
+    text-align: center;
+    margin: 0px 0px 0px 335px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+h1{
+    margin: 40px 0px 0px 0px
+}
+.guess{
+    margin-top: 100px;
+}
+.div-two{
+    text-align: center;
+}
+input{
+    width: 50px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0px 0px 0px 345px;
+}
+button{
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px;
+    width: 75px;
+    height: 25px;
+}

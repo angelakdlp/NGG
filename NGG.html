@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="NGG.css">
+    <script src="NGG.js"></script>
+</head>
+<body>
+    <div class="div-one">
+        <h1>GUESSING GAME</h1>
+        <p>Guess a number between 1 and 25 to see if its correct</p>
+        <p class="guess">Guess:</p>
+        <div class="div-two">
+            <input type="number" id="userGuess">
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+        <div id="message"></div>
+        <div id="attempts"></div>
+    </div>
+    <script>
+        document.getElementById("submitButton").addEventListener("click", checkGuess);
+    </script>
+
+</body>
+</html>
