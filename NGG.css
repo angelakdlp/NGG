@@ -10,8 +10,9 @@
 h1{
     margin: 40px 0px 0px 0px
 }
-.guess{
-    margin-top: 100px;
+p{
+    margin: 0px 0px 100px 0px;
+    font-size: larger;
 }
 .div-two{
     text-align: center;
@@ -21,7 +22,7 @@ input{
     height: 30px;
     display: block;
     text-align: center;
-    margin: 0px 0px 0px 345px;
+    margin: 20px 0px 0px 345px;
 }
 button{
     margin: 10px 0px 0px 0px;
